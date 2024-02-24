@@ -40,6 +40,21 @@ class TwistAPI():
     
     def p_getFollowsList(self):
         return "get_follows_list.php"
+    
+    def p_getUsersListMore(self):
+        return "get_users_list_more.php"
+    
+    def p_getPostsListMore(self):
+        return "get_posts_list_more.php"
+    
+    def p_getInsightsListMore(self):
+        return "get_insights_list_more.php"
+    
+    def p_getLikesListMore(self):
+        return "get_likes_list_more.php"
+    
+    def p_getFollowsListMore(self):
+        return "get_follows_list_more.php"
 
     def getParsedUrl(self, page:str, args:dict={}):
         args_text = ""
@@ -166,6 +181,61 @@ class TwistAPI():
     def getFollowsList(self):
         start_time = time.time()
         response = self.request(self.getParsedUrl(self.p_getFollowsList(), {
+            "id": id
+        }))
+        end_time = time.time()
+        request_info = {
+            "time": round(end_time - start_time, 6)
+        }
+        return response, request_info
+    
+    def getUsersListMore(self):
+        start_time = time.time()
+        response = self.request(self.getParsedUrl(self.p_getUsersListMore(), {
+            "id": id
+        }))
+        end_time = time.time()
+        request_info = {
+            "time": round(end_time - start_time, 6)
+        }
+        return response, request_info
+    
+    def getPostsListMore(self):
+        start_time = time.time()
+        response = self.request(self.getParsedUrl(self.p_getPostsListMore(), {
+            "id": id
+        }))
+        end_time = time.time()
+        request_info = {
+            "time": round(end_time - start_time, 6)
+        }
+        return response, request_info
+    
+    def getInsightsListMore(self):
+        start_time = time.time()
+        response = self.request(self.getParsedUrl(self.p_getInsightsListMore(), {
+            "id": id
+        }))
+        end_time = time.time()
+        request_info = {
+            "time": round(end_time - start_time, 6)
+        }
+        return response, request_info
+    
+    def getLikesListMore(self):
+        start_time = time.time()
+        response = self.request(self.getParsedUrl(self.p_getLikesListMore(), {
+            "id": id
+        }))
+        end_time = time.time()
+        request_info = {
+            "time": round(end_time - start_time, 6)
+        }
+        return response, request_info
+    
+    def getFollowsListMore(self):
+        start_time = time.time()
+        response = self.request(self.getParsedUrl(self.p_getFollowsListMore(), {
             "id": id
         }))
         end_time = time.time()
