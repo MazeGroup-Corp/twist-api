@@ -22,3 +22,8 @@ Available get functions :
 - `getInsightsList()` -> tuple(dict(informations), dict(request info))
 - `getLikesList()` -> tuple(dict(informations), dict(request info))
 - `getFollowsList()` -> tuple(dict(informations), dict(request info))
+- `getUsersListMore()` -> tuple(dict(informations), dict(request info))
+- `getPostsListMore()` -> tuple(dict(informations), dict(request info))
+- `getInsightsListMore()` -> tuple(dict(informations), dict(request info))
+- `getLikesListMore()` -> tuple(dict(informations), dict(request info))
+- `getFollowsListMore()` -> tuple(dict(informations), dict(request info))
