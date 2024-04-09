@@ -9,7 +9,7 @@ import time
 
 class TwistAPI():
     def __init__(self):
-        self.api_url = "https://twist.mazegroup.org/api/"
+        self.api_url = "https://twists-socials.com/api/"
     
     def p_getUserInfo(self):
         return "get_user_info.php"
